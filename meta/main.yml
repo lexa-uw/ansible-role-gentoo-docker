@@ -18,5 +18,5 @@ galaxy_info:
     "docker", "docker-compose", "docker-registry", "docker-swarm", "gentoo"]
 
 dependencies: [
-  { role: gentoo.package-meta, packages: "{{ docker_packages_meta }}" }
+  { role: lexa-uw.gentoo.package-meta, packages: "{{ docker_packages_meta }}" }
 ]
