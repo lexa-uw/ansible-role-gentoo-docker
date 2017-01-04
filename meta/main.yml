@@ -14,8 +14,7 @@ galaxy_info:
     versions:
       - all
 
-  galaxy_tags: [
-    "docker", "docker-compose", "docker-registry", "docker-swarm", "gentoo"]
+  galaxy_tags: [ "docker", "compose", "registry", "swarm", "gentoo"]
 
 dependencies: [
   { role: lexa-uw.gentoo-package-meta, packages: "{{ docker_packages_meta }}" }
