@@ -3,7 +3,7 @@ galaxy_info:
   description: Role for adding docker/docker-compose/docker-registry/docker-swarm.
   company: Freelance
 
-  issue_tracker_url: http://example.com/issue/tracker
+  issue_tracker_url: https://github.com/lexa-uw/ansible-role-gentoo.docker/issues
 
   license: BSD
 
