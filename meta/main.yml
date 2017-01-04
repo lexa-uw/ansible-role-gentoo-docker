@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Lexa
+  description: Role for adding docker/docker-compose/docker-registry/docker-swarm.
+  company: Freelance
+
+  issue_tracker_url: http://example.com/issue/tracker
+
+  license: BSD
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Gentoo
+    versions:
+      - all
+
+  galaxy_tags: [
+    "docker", "docker-compose", "docker-registry", "docker-swarm", "gentoo"]
+
+dependencies: [
+  { role: gentoo.package-meta, packages: "{{ docker_packages_meta }}" }
+]

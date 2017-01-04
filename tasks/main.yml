@@ -1,0 +1,33 @@
+---
+# tasks file for gentoo.docker
+  - name: Set up layman
+    layman:
+      name: "docker"
+
+  - name: Install docker
+    package:
+      package: "{{ docker_packages | join(',') }}"
+      newuse: "yes"
+      update: "yes"
+    vars:
+      docker_packages:
+        - "app-emulation/docker"
+        - "app-emulation/docker-compose"
+        - "app-emulation/docker-registry"
+        - "app-emulation/docker-swarm"
+    tags: [packages]
+
+  - name: Setup "docker" service
+    service:
+      name: "docker"
+      enabled: "yes"
+      state: "started"
+      runlevel: "default"
+    tags: [services]
+
+  - name: Add user to docker group
+    user:
+      append: yes
+      name: "{{ item }}"
+      groups: docker
+    with_items: "{{ docker_users }}"

@@ -1,0 +1,18 @@
+---
+# defaults file for gentoo.docker
+docker_packages_meta: 
+  - name: app-emulation/docker
+    keywords: [~amd64]
+  - name: app-emulation/docker-proxy
+    keywords: [~amd64]
+  - name: app-emulation/runc
+    keywords: [~amd64]
+  - name: app-emulation/containerd
+    keywords: [~amd64]
+  - name: sys-fs/lvm2
+    use: [thin]
+  - name: sys-process/tini
+    keywords: [~amd64]
+    use: [static]
+
+docker_users: []
