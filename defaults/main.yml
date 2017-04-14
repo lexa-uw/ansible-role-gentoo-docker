@@ -5,7 +5,7 @@ docker_packages_meta:
     keywords: [~amd64]
   - name: app-emulation/docker-proxy
     keywords: [~amd64]
-  - name: app-emulation/runc
+  - name: app-emulation/docker-runc
     keywords: [~amd64]
   - name: app-emulation/containerd
     keywords: [~amd64]
