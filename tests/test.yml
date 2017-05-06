@@ -2,4 +2,4 @@
 - hosts: test
   become: yes
   roles:
-    - gentoo-docker
+    - ansible-role-gentoo-docker
