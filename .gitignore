@@ -1,0 +1,3 @@
+tests/roles
+tests/host_vars
+tests/test.retry

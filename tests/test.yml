@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: test
   become: yes
   roles:
-    - ../gentoo.docker
+    - gentoo-docker
